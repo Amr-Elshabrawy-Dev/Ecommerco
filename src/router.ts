@@ -1,4 +1,3 @@
-import { S } from "vite/dist/node/types.d-aGj9QkWt";
 import {
   initHome,
   initProducts,
@@ -10,7 +9,7 @@ import {
   initSignin,
   initSignup,
   initProfile,
-} from "../pages/index";
+} from "./pages/index";
 
 export function router() {
   const pageCache: { [key: string]: string } = {};
