@@ -1,6 +1,6 @@
 # Ecommerco
 
-A modern e-commerce application built with JavaScript.
+A modern e-commerce application built with TypeScript.
 
 ## Description
 
