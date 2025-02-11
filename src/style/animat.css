@@ -1,0 +1,144 @@
+@keyframes shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%,
+  24% {
+    transform: rotate(-18deg);
+  }
+  12%,
+  28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shadow {
+  0% {
+    filter: drop-shadow(0px 0px 2px var(--color-btn))
+            drop-shadow(0px 0px 5px var(--color-btn))
+            drop-shadow(0px 0px 7px var(--color-btn));
+  }
+  4% {
+    filter: drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn));
+  }
+  8%,
+  24% {
+    filter: drop-shadow(0px 0px 3px var(--color-btn))
+            drop-shadow(0px 0px 6px var(--color-btn))
+            drop-shadow(0px 0px 8px var(--color-btn));
+  }
+  12%,
+  28% {
+    filter: drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn));
+  }
+  16% {
+    filter: drop-shadow(0px 0px 4px var(--color-btn))
+            drop-shadow(0px 0px 7px var(--color-btn))
+            drop-shadow(0px 0px 9px var(--color-btn));
+  }
+  20% {
+    filter: drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn));
+  }
+  32% {
+    filter: drop-shadow(0px 0px 1px var(--color-btn))
+            drop-shadow(0px 0px 3px var(--color-btn))
+            drop-shadow(0px 0px 5px var(--color-btn));
+  }
+  36% {
+    filter: drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn));
+  }
+  40%,
+  100% {
+    filter: drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn))
+            drop-shadow(0px 0px 0px var(--color-btn));
+  }
+}
+@keyframes box-shadow {
+  0% {
+    box-shadow: 0px 0px 12px var(--color-btn),
+          inset 0px 0px 12px var(--color-btn);
+  }
+  4% {
+    box-shadow: 0px 0px 0px var(--color-btn),
+          inset 0px 0px 0px var(--color-btn);
+  }
+  8%,
+  24% {
+    box-shadow: 0px 0px 14px var(--color-btn),
+          inset 0px 0px 14px var(--color-btn);
+  }
+  12%,
+  28% {
+    box-shadow: 0px 0px 0px var(--color-btn),
+          inset 0px 0px 0px var(--color-btn);
+  }
+  16% {
+    box-shadow: 0px 0px 16px var(--color-btn),
+          inset 0px 0px 16px var(--color-btn);
+  }
+  20% {
+    box-shadow: 0px 0px 0px var(--color-btn),
+          inset 0px 0px 0px var(--color-btn);
+  }
+  32% {
+    box-shadow: 0px 0px 10px var(--color-btn),
+          inset 0px 0px 10px var(--color-btn);
+  }
+  36% {
+    box-shadow: 0px 0px 0px var(--color-btn),
+          inset 0px 0px 0px var(--color-btn);
+  }
+  40%,
+  100% {
+    box-shadow: 0px 0px 12px var(--color-btn),
+          inset 0px 0px 12px var(--color-btn);
+  }
+}
+@keyframes loader {
+  90%, 100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: var(--pathLength) 0;
+  }
+}
+@keyframes fill {
+  0% {
+    width: 0;
+    height: 2px;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: var(--color-black-ops);
+  }
+}

@@ -1,0 +1,68 @@
+@media (min-width: 1200px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 991px) {
+  :root {
+    font-size: 12px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    text-align: left;
+  }
+  .nav__items {
+    position: absolute;
+    top: 25%;
+    right: 3%;
+  }
+  .payment-icon img {
+    aspect-ratio: 9/8;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+  .row.row-group > div {
+    border-right: 2px solid var(--color-secondary);
+    border-bottom: 0;
+  }
+  .row.row-group > div:last-child {
+    border-right: none;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    text-align: left;
+  }
+  .nav__items {
+    position: absolute;
+    top: 25%;
+    right: 3%;
+  }
+  .offcanvas-lg {
+    width: 30% !important;
+  }
+  .payment-icon img {
+    aspect-ratio: 9/10;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__items {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+  }
+  .offcanvas-lg {
+    width: 50% !important;
+  }
+}

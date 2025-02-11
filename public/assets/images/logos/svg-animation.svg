@@ -1,0 +1,70 @@
+<svg viewBox="0 0 572 572" preserveAspectRatio="xMidYMid meet"
+  xmlns="http://www.w3.org/2000/svg" version="1.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    svg {
+      display: block;
+      background: #12172600;
+      fill: #0000;
+      width: 100%;
+      height: 100%;
+    }
+
+    path {
+      fill: transparent;
+      stroke: var(--ic);
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: var(--i);
+      stroke-dashoffset: var(--i);
+      animation: dash 2.5s alternate infinite ease-in-out;
+      filter: drop-shadow(0px 0px 1px rgb(from var(--ic) r g b / 75%)) drop-shadow(0px 0px 5px rgb(from var(--ic) r g b / 75%)) drop-shadow(0px 0px 1px rgb(from var(--ic) r g b / 75%));
+    }
+
+    .shape {
+      --i: 1500;
+      --i2: 3000;
+      --ic: #ffffff;
+    }
+
+    .A {
+      --i: 908;
+      --i2: 1816;
+      --ic: #00bbef;
+    }
+
+    .M {
+      --i: 1628;
+      --i2: 3256;
+      --ic: #ffffff;
+    }
+
+    .R {
+      --i: 920;
+      --i2: 1840;
+      --ic: #00bbef;
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dashoffset: var(--i);
+      }
+
+      100% {
+        stroke-dashoffset: var(--i2);
+      }
+    }
+  </style>
+  <path class="shape"
+    d=" M 256 68.5, L 41 183.5, 41 378.5, 256 503.5, 317 503.5, 531 378.5,531 183.5, 317 68.5, z" />
+
+  <path class="A"
+    d="M 116 305.5, L 116 385.5, 76 360.5, 76 200.5, 196 136.5, 196 430.5, 156 405.5, 156 305.5,z M 116 225.5, 116 265.5, 156 265.5, 156 205.5,z " />
+
+  <path class="M"
+    d="M 271 265.5, L 256 225.5, 256 465.5, 216 440.5, 216 125.5, 256 103.5, 286 205.5, 316 103.5, 356 125.5, 356 440.5, 316 465.5, 316 225.5, 300 265.5, z  " />
+
+  <path class="R"
+    d="M 416 305.5, L 416 405.5, 376 430.5, 376 136.5, 496 200.5, 496 270.5, 476 280.5, 496 290.5, 496 360.5, 456 385.5, 456 325.5, 431 305.5,z M  416 205.5, L 416 265.5, 431 265.5, 456 240.5, 456 225.5,z  " />
+</svg>

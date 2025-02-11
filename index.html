@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wear Store</title>
+
+    <!-- Short description of the document's subject (limit to 150 characters) -->
+    <meta
+      name="description"
+      content="Wear Store is the ultimate online destination for fashion lovers. Whether you are looking for trendy clothes, accessories, shoes, or bags, you will find them all at Wear Store. Wear Store offers a wide range of brands and styles to suit every taste and budget. You can also enjoy fast and free shipping, easy returns, and secure payment options. Shop at Wear Store today and discover the best deals on the latest fashion trends."
+    />
+    <meta
+      name="keywords"
+      content="clothes,t-shirt,shirt,pants,shoes,jacket,dress, cap,accessories, sunglasses,adidas, nike, puma, cat, champion, fila, h&m, barbie,levis, rayban"
+    />
+    <link rel="shortcut icon" href="./content/assets/images/img/1.jpg" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="assets/images/logos/Untitled_logo_3_free-file.jpg" />
+    <link rel="stylesheet" href="src/style/my-fonts.css" />
+    <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="src/style/animat.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style/main.css" />
+    <link rel="stylesheet" href="src/style/media.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light shadow-lg mx-4 mt-lg-5 start-0 end-0 mt-2 mt-lg-0 sticky-lg-top z-3 clip-path-navbar"
+    >
+      <div class="container-fluid justify-content-center px-0">
+        <div class="row w-100 align-items-center justify-content-between">
+          <div
+            class="col-lg-3 d-flex align-items-center justify-content-between justify-content-start position-relative"
+          >
+            <div
+              class="bg-black-ops clip-path-top position-absolute start-0 bottom-100 w-100 d-none d-lg-block"
+            >
+              <div class="text-center text-white">
+                <h2 class="m-0">welcome</h2>
+              </div>
+            </div>
+            <div
+              class="bg-black-ops clip-path-bottom position-absolute start-50 top-100 d-none d-lg-block"
+            >
+              <div class="row row-group align-items-center">
+                <div class="col-3">
+                  <button
+                    id="settings-btn"
+                    title="cog"
+                    class="bg-transparent text-white w-100 border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"
+                  >
+                    <i class="ms-5 bx-sm bx bx-cog"></i>
+                  </button>
+                </div>
+                <div class="col px-0">
+                  <input
+                    type="text"
+                    class="form-control bg-transparent border-0 shadow-none text-white"
+                    placeholder="...search"
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    id="search-btn"
+                    title="Search"
+                    class="bg-transparent text-white w-100 border-0"
+                  >
+                    <i class="me-5 bx-sm bx bx-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="navbar-brand d-flex align-items-center justify-content-lg-center m-lg-auto fs-4"
+              href="#"
+            >
+              <span class="me-1">fashion</span>
+              <svg
+                class="order-first order-lg-0 me-1 brand-svg"
+                viewBox="0 0 510 453"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d=" M 5 125, L 5 320, 220 445, 280 445, 495 320, 495 120, 280 10, 220 10, z  "
+                  stroke="#000"
+                  stroke-width="13"
+                  fill="#000"
+                />
+                <path
+                  d="M 80 245, L 80 325, 40 300, 40 150, 160 80, 160 370, 120 345, 120 245,z M 80 170, 80 205, 120 205, 120 145,z 
+              M 180 70, L 220 45, 250 145, 280 45, 320 70, 320 380, 280 405, 280 165, 270 200, 230 200, 220 165, 220 405, 180 380, z 
+              M 380 245, L 380 345, 340 370, 340 80, 460 140, 460 210, 440 220, 460 230, 460 300, 420 325, 420 265, 395 245,z
+              M 380 195,L 395 195, 420 175, 420 165, 380 147,z "
+                  fill="#1E88E5"
+                  stroke="#1E88E5"
+                  stroke-width="5"
+                />
+              </svg>
+              <span>stowage</span>
+            </a>
+            <button
+              class="navbar-toggler collapsed fs-1 shadow-none d-flex d-lg-none flex-column justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+          </div>
+          <div
+            class="navbarNav col-lg-4 transition-2 collapse navbar-collapse py-3 py-lg-0 order-lg-first"
+          >
+            <ul class="navbar-nav gap-2 me-auto ms-auto mt-2 mt-lg-0 fs-5">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/brand">Brand</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">about</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="navbarNav col-lg-4 transition-2 collapse navbar-collapse py-3 py-lg-0"
+          >
+            <ul class="navbar-nav gap-2 align-items-center">
+              <li class="nav-item align-self-end dropdown">
+                <a
+                  class="nav-link text-uppercase dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  title="user"
+                >
+                  <i
+                    class="nav-icon bx-md bx bx-user bx-tada"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <ul class="dropdown-menu mt-3 bg-dark-ops">
+                  <li><a class="dropdown-item" href="/signin">sign in</a></li>
+                  <li><a class="dropdown-item" href="/signup">sign up</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="/profile">profile</a></li>
+                </ul>
+              </li>
+              <li class="nav-item align-self-end ms-lg-5">
+                <a
+                  class="nav-link text-uppercase"
+                  href="/wishlist"
+                  title="heart"
+                >
+                  <i class="nav-icon bx-md bx bx-heart"></i>
+                </a>
+              </li>
+              <li class="nav-item align-self-end ms-lg-5">
+                <a
+                  class="nav-link text-uppercase position-relative"
+                  href="/cart"
+                  title="bag"
+                >
+                  <span
+                    class="badge rounded-pill badge-notification bg-primary-ops position-absolute start-0 top-0"
+                    >1</span
+                  >
+                  <span><i class="nav-icon bx-md bx bx-shopping-bag"></i></span>
+                </a>
+              </li>
+              <li class="nav-item align-self-end ms-lg-5">
+                <a
+                  class="nav-link text-uppercase position-relative"
+                  href="/contact"
+                  title="phone"
+                >
+                  <span><i class="nav-icon bx-md bx bx-phone"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Setting Box -->
+    <div
+      class="offcanvas bg-black text-primary-ops offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header pb-0 text-light">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          Theme Customizes
+        </h5>
+        <button
+          type="button"
+          class="px-0 border-0 bg-black-ops btn btn-dark"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="bx bx-x bx-md mx-auto"></i>
+        </button>
+      </div>
+      <hr class="mx-3" />
+      <div class="offcanvas-body">
+        <div>
+          <h6 class="text-capitalize">Choose color</h6>
+          <hr />
+          <ul
+            class="color-themes d-flex align-items-center justify-content-around row-gap-4 flex-wrap p-0"
+          >
+            <li class="bg-theme active" data-color="#1E88E5"></li>
+            <li class="bg-theme" data-color="#DB577F"></li>
+            <li class="bg-theme" data-color="#15dc0b"></li>
+            <li class="bg-theme" data-color="#404756"></li>
+            <li class="bg-theme" data-color="#7978ED"></li>
+            <li class="bg-theme" data-color="#DAA21C"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Setting Box -->
+    <!-- Start Content -->
+    <div id="content" class="my-5"></div>
+    <!-- End Content -->
+    <!-- Start Back To Top -->
+    <div class="position-fixed bottom-0 end-0 m-3">
+      <button
+        title="go-up"
+        id="topBtn"
+        class="btn opacity-100 p-2 btn-lighter btn-ecommerco bx-fade-up d-none rounded-pill"
+      >
+        <i class="bx bx-chevrons-up bx-sm m-0"></i>
+      </button>
+    </div>
+    <!-- End Back To Top -->
+    <!-- Start Footer -->
+    <footer class="bg-dark-ops">
+      <section class="mb-0">
+        <div class="container text-white">
+          <div
+            class="row row-cols-xl-4 row-cols-md-3 row-cols-2 justify-content-center"
+          >
+            <div class="col">
+              <div class="mb-3">
+                <h6 class="mb-3">contact info</h6>
+                <div class="address mb-3">
+                  <p class="mb-0 text-uppercase">address</p>
+                  <p class="mb-0 text-white-50 fs-7">
+                    123 Street Name, City, Africa
+                  </p>
+                </div>
+                <div class="phone mb-3">
+                  <p class="mb-0 text-uppercase">phone</p>
+                  <p class="mb-0 text-white-50 fs-7">Toll Free (123) 472-796</p>
+                  <p class="mb-0 text-white-50 fs-7">Mobile : +91-9910XXXX</p>
+                </div>
+                <div class="email mb-3">
+                  <p class="mb-0 text-uppercase">email</p>
+                  <p class="mb-0 text-white-50 fs-7">mail@example.com</p>
+                </div>
+                <div class="working-days mb-3">
+                  <p class="mb-0 text-uppercase">working days</p>
+                  <p class="mb-0 text-white-50 fs-7">
+                    Mon - FRI / 9:30 AM - 6:30 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <h6 class="mb-3">Shop Categories</h6>
+                <ul>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="">
+                      <i class="bx bx-chevron-right"></i>
+                      categories name
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <h6 class="mb-3">Popular Tags</h6>
+                <div class="tags-box">
+                  <a href="" class="tag-link">Cloths</a>
+                  <a href="" class="tag-link">Sports</a>
+                  <a href="" class="tag-link">Men Wear</a>
+                  <a href="" class="tag-link">Women Wear</a>
+                  <a href="" class="tag-link">Formal Shirts</a>
+                  <a href="" class="tag-link">Top wear</a>
+                  <a href="" class="tag-link">Bottom Wear</a>
+                  <a href="" class="tag-link">Bags</a>
+                  <a href="" class="tag-link">Shoes</a>
+                  <a href="" class="tag-link">shirt</a>
+                  <a href="" class="tag-link">cap</a>
+                  <a href="" class="tag-link">jacket</a>
+                  <a href="" class="tag-link">pants</a>
+                  <a href="" class="tag-link">scarf</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <h6 class="mb-3">Stay informed</h6>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >your name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control text-white bg-dark-ops border-white border-opacity-25"
+                    id="exampleFormControlInput1"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control text-white bg-dark-ops border-white border-opacity-25"
+                    id="exampleFormControlInput2"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control text-white fs-7 bg-dark-ops border-white border-opacity-25"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Type your message"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="p-1 mt-1 text-white border-light border-2 border-top bg-black-ops"
+      >
+        <div class="container">
+          <div class="row row-cols-3 align-items-center">
+            <div class="col">
+              <ul
+                class="d-flex align-items-center justify-content-start p-0 gap-3 fs-2"
+              >
+                <li class="pt-1">
+                  <a
+                    href="https://www.linkedin.com/in/amr-elshabrawy-dev/"
+                    title="linkedin"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-linkedin-square"></i>
+                  </a>
+                </li>
+                <li class="pt-1">
+                  <a
+                    href="https://github.com/Amr-Elshabrawy-Dev"
+                    title="github"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </li>
+                <li class="pt-1">
+                  <a
+                    href="https://twitter.com/AmrElshbrawy217"
+                    title="twitter"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li class="pt-1">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=%2B2001202546653&text&type=phone_number&app_absent=0"
+                    title="whatsapp"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col text-center p-3">
+              <small>© 2023 Copyright</small>
+              <a
+                class="mx-1"
+                href="https://github.com/Amr-Elshabrawy-Dev?tab=repositories"
+                title="logo"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="brand-svg"
+                  viewBox="0 0 502 455"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d=" M 5 125, L 5 320, 220 445, 280 445, 495 320, 495 120, 280 10, 220 10, z  "
+                    stroke="#1E88E5"
+                    stroke-width="13"
+                    fill="#000"
+                  />
+                  <path
+                    d="M 80 245, L 80 325, 40 300, 40 150, 160 80, 160 370, 120 345, 120 245,z M 80 170, 80 205, 120 205, 120 145,z 
+										M 180 70, L 220 45, 250 145, 280 45, 320 70, 320 380, 280 405, 280 165, 270 200, 230 200, 220 165, 220 405, 180 380, z 
+										M 380 245, L 380 345, 340 370, 340 80, 460 140, 460 210, 440 220, 460 230, 460 300, 420 325, 420 265, 395 245,z
+										M 380 195,L 395 195, 420 175, 420 165, 380 147,z "
+                    fill="#1E88E5"
+                    stroke="#1E88E5"
+                    stroke-width="5"
+                  />
+                </svg>
+              </a>
+              <small>Fashion store</small>
+            </div>
+            <div class="col">
+              <div class="col payment-icon">
+                <ul class="d-flex align-items-center justify-content-end gap-2">
+                  <li>
+                    <img src="/assets/images/img/visa.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/images/img/mastercard.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/images/img/paypal.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/images/img/american-express.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- End Footer -->
+    <script type="module" src="src/js/main.ts"></script>
+  </body>
+</html>
